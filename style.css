@@ -1,0 +1,62 @@
+body {
+  background: #CFDEF3;
+  font-family: 'Verdana' serif;
+  text-align: center;
+  text-shadow: 2px 2px 5px green;
+
+}
+
+h1 {
+  margin-left: 35%;
+  width: 350px;
+  font-style: oblique;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 3em;
+}
+
+.container {
+  margin: 15% auto;
+  width: 500px;
+  height: 300px;
+  border: 8px solid black;
+  box-shadow: 10px 10px grey;
+}
+
+.skaidre {
+  margin: 5% 25%;
+  width: 250px;
+  height: 150px;
+  background-image: url("https://images.unsplash.com/photo-1620654414589-3ea90a15d9d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+  background-size: cover;
+  background-position: center;
+  animation: rotateX 2s linear alternate 2;
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotateX(0deg) translateY(0px) scale(1);
+  }
+
+  to {
+    transform: rotateX(180deg) translateY(-50px) scale(2);
+  }
+}
+
+/* .skaidre:hover {
+  transform: rotateY(180deg) translateX(20px) scale(2);
+} */
+
+.priedas {
+  margin: 25%;
+  width: 250px;
+  height: 180px;
+  border-radius: 50%;
+  background: #41584b;
+  transform: rotateY(200deg);
+  transition: all 3s ease-in-out;
+}
+
+.priedas:hover {
+  transform: rotateX(120deg) translateY(80px) scale(1);
+}
